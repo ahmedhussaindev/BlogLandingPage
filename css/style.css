@@ -37,6 +37,10 @@ html {
     box-shadow: 4px 4px #000;
 }
 
+.bigest-shadow {
+    box-shadow: 6px 6px #000;
+}
+
 .large-shadow {
     filter: drop-shadow(6px 6px 0 #000);
 }
@@ -284,7 +288,7 @@ header {
     padding-bottom: 50px;
     background-color: #FFF085;
     border-bottom: 3px solid #000;
-    z-index: -5;
+    z-index: 0;
 }
 
 .cube-one {
@@ -295,7 +299,7 @@ header {
     position: absolute;
     left: 50px;
     top: 40px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .cube-two {
@@ -306,7 +310,7 @@ header {
     position: absolute;
     right: 84px;
     top: 160px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .hero-container {
@@ -315,6 +319,9 @@ header {
     justify-content: space-between;
     flex-direction: column;
     gap: 24px;
+    position: relative;
+    z-index: 2;
+
 }
 
 .hero-text .trending-now {
@@ -637,6 +644,7 @@ header {
     box-shadow: 6px 6px #000;
     background-color: #FFF;
 }
+
 .categories {
     margin-bottom: 0;
 }
@@ -769,6 +777,192 @@ header {
 
 /* end latest-articles */
 
+
+/* start authors */
+
+.authors {
+    border-bottom: 3px solid #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFD230;
+}
+
+.authors-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.authors-header h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+
+.authors-header p {
+    color: #525252;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.hr {
+    background-color: #000;
+    transform: rotate(1deg);
+    height: 8px;
+    width: 12%;
+    margin-top: 16px;
+    margin-inline: auto;
+}
+
+.authors-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.authors-card {
+    border: 4px solid #000;
+    padding: 32px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.authors-card:hover {
+    transform: translate(-3px, -3px);
+}
+
+.alex-card {
+    background-color: #FEF9C2;
+}
+
+.arnold-card {
+    background-color: #DBFCE7;
+}
+
+.mike-card {
+    background-color: #FCE7F3;
+}
+
+.authors-founder,
+.authors-lead,
+.authors-viral {
+    position: absolute;
+    color: #FFF;
+    font-weight: 550;
+    font-size: 12px;
+    border: #000 solid 2px;
+    top: 24px;
+    right: 20px;
+    padding: 4px 8px;
+}
+
+.authors-founder {
+    background-color: #FB2C36;
+    transform: rotate(12deg);
+}
+
+.authors-lead {
+    background-color: #2B7FFF;
+    transform: rotate(-12deg);
+}
+
+.authors-viral {
+    background-color: #AD46FF;
+    transform: rotate(45deg);
+}
+
+.authors-image img {
+    margin-inline: auto;
+    display: block;
+    width: 45%;
+    border: 4px solid #000;
+    margin-bottom: 24px;
+}
+
+.authors-name {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.authors-card:hover .authors-red {
+    color: #E7000B;
+}
+
+.authors-card:hover .authors-blue {
+    color: #155DFC;
+}
+
+.authors-card:hover .authors-purple {
+    color: #9810FA;
+}
+
+
+.authors-career {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #525252;
+}
+
+.about-authors {
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.social-media ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media a img {
+    background-color: #000;
+    border: 2px solid #000;
+    width: 50px;
+    padding: 12px;
+    box-shadow: 0px 0px #000;
+    transition: 0.3s;
+}
+
+.social-media a .instagram:hover {
+    box-shadow: 6px 6px #000;
+    background-color: #E60076;
+    transform: translate(-3px, -3px);
+}
+
+.social-media a .linkedin:hover {
+    box-shadow: 6px 6px #000;
+    background-color: #155DFC;
+    transform: translate(-3px, -3px);
+}
+
+.social-media a .twitter:hover {
+    box-shadow: 6px 6px #000;
+    background-color: #1DA1F2;
+    transform: translate(-3px, -3px);
+}
+
+.authors {
+    position: relative;
+    z-index: 0;
+}
+.cube-four {
+    width: 150px;
+    height: 150px;
+    background-color: #E5BD2B;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: -1;
+}
+
+/* end authors */
 
 /* end main section */
 
@@ -923,8 +1117,8 @@ header {
         transform: rotate(-45deg);
         position: absolute;
         left: 500px;
-        bottom: 10px;
-        z-index: -1;
+        bottom: -15px;
+        z-index: 0;
     }
 
     .hero-container {
@@ -951,6 +1145,10 @@ header {
 @media screen and (min-width:1280px) {
     .xl-w25 {
         width: 25%;
+    }
+
+    .xl-w30 {
+        width: 31%;
     }
 
     .xl-w33 {
@@ -1007,6 +1205,11 @@ header {
 
     .card-info div {
         width: auto;
+    }
+
+    .authors .container {
+        padding-inline: 0;
+
     }
 }
 
