@@ -787,18 +787,18 @@ header {
     background-color: #FFD230;
 }
 
-.authors-header {
+.section-header {
     text-align: center;
     margin-bottom: 64px;
 }
 
-.authors-header h2 {
+.section-header h2 {
     font-size: 48px;
     margin-bottom: 16px;
     font-weight: 900;
 }
 
-.authors-header p {
+.section-header p {
     color: #525252;
     font-size: 20px;
     font-weight: 550;
@@ -951,6 +951,7 @@ header {
     position: relative;
     z-index: 0;
 }
+
 .cube-four {
     width: 150px;
     height: 150px;
@@ -963,6 +964,164 @@ header {
 }
 
 /* end authors */
+
+
+/* start community */
+
+.community {
+    border-bottom: 3px solid #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F5F5F5;
+}
+
+.comunity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.become-part-header {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.become-part-paragraph {
+    background-color: #FFF;
+    font-size: 20px;
+    margin-bottom: 32px;
+    padding: 16px;
+    border: 2px solid #000;
+    line-height: 1.6;
+    font-weight: 550;
+}
+
+.become-part-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.become-part-icon .icon {
+    margin-right: 16px;
+    border: 2px solid #000;
+    padding: 8px;
+}
+
+.become-part-icon .check-icon {
+    background-color: #FB2C36;
+}
+
+.become-part-icon .discord-icon {
+    background-color: #2B7FFF;
+}
+
+.become-part-icon .star-icon {
+    background-color: #AD46FF;
+}
+
+.become-part-icon .pen-icon {
+    background-color: #00C950;
+}
+
+
+.become-part-icon .icon,
+.rebels-saying-image img {
+    width: 40px;
+
+}
+
+.become-part-description {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.join-now {
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 4px solid #000;
+    background-color: #000;
+    color: #FFF;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.join-now:hover {
+    transform: translate(4px, 4px);
+    filter: drop-shadow(0px 0px 0 #000);
+}
+
+.join-now img {
+    width: 20px;
+}
+
+.rebels-saying {
+    border: 4px solid #000;
+    padding: 40px;
+    background-color: #FFF;
+}
+
+.rebels-saying-header {
+    font-size: 30px;
+    margin-bottom: 36px;
+    font-weight: 800;
+}
+
+.rebels-saying-card {
+    padding: 16px 16px 16px 24px;
+    margin-bottom: 32px;
+    border: 2px solid #000;
+}
+
+.first-card {
+    background-color: #FEF2F2;
+}
+
+.second-card {
+    background-color: #EFF6FF;
+}
+
+.last-card {
+    margin-bottom: 0;
+    background-color: #FAF5FF;
+}
+
+.rebels-saying-paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.rebels-saying-image {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.rebels-saying-image img {
+    width: 46px;
+    border: 2px solid #000;
+}
+
+.rebels-saying-text .rebels-saying-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rebels-saying-text .rebels-saying-career {
+    font-size: 14px;
+    color: #525252;
+    line-height: 1.5;
+}
+
+/* end community */
 
 /* end main section */
 
@@ -1036,7 +1195,8 @@ header {
         width: 45%;
     }
 
-    .hero-button img {
+    .hero-button img,
+    .join-now img {
         width: 25px;
     }
 }
@@ -1069,6 +1229,10 @@ header {
         height: 96px;
     }
 
+    .join-now {
+        padding: 16px 26px;
+        font-size: 24px;
+    }
 }
 
 /* lg */
@@ -1210,6 +1374,10 @@ header {
     .authors .container {
         padding-inline: 0;
 
+    }
+
+    .community .container {
+        padding-inline: 0;
     }
 }
 
