@@ -1126,6 +1126,155 @@ header {
 /* end main section */
 
 
+/* start footer */
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000;
+    color: #FFF;
+}
+
+footer .top-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    gap: 24px;
+}
+
+.review-icon img {
+    background-color: #FFF;
+    padding: 10px;
+    width: 50px;
+    margin-right: 16px;
+}
+
+.review-icon {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.review-icon h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.footer-paragraph,
+.newsletter-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.footer-links h3,
+.footer-newsletter h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 550;
+    transition: 0.3s;
+}
+
+.footer-links li a {
+    font-size: 18px;
+    line-height: 2.5;
+}
+
+.footer-links li a:hover,
+.footer-bottom li a:hover {
+    color: #FFDF20;
+}
+
+.mini-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mini-form form input {
+    margin-bottom: 16px;
+    padding: 18px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 550;
+    color: #FFF;
+    outline: none;
+    transition: 0.3s;
+}
+
+.mini-form form input:focus {
+    border-color: #FFDF20;
+}
+
+.mini-form form button {
+    padding: 18px 0;
+    font-size: 18px;
+    font-weight: 550;
+    box-shadow: -4px -4px 0 0 #00000033 inset;
+    background-color: #ffdf20;
+    border: none;
+    transition: 0.3s;
+}
+
+.mini-form form button:hover {
+    transform: translate(3px, 3px);
+    background-color: #FDC700;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-bottom p {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.footer-bottom::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #FFF;
+    width: 100%;
+    top: 0;
+
+}
+
+.footer-bottom ul {
+    line-height: 1.5;
+}
+.footer-bottom ul {
+    display: flex;
+}
+
+.footer-bottom ul .first-link,
+.footer-bottom ul .second-link {
+    margin-right: 32px;
+}
+
+/* end footer */
+
+
 /* media */
 
 /* sm */
@@ -1198,6 +1347,14 @@ header {
     .hero-button img,
     .join-now img {
         width: 25px;
+    }
+
+    .footer-bottom p {
+        font-size: 16px;
+    }
+
+    .footer-bottom ul a {
+        font-size: 16px;
     }
 }
 
@@ -1303,6 +1460,19 @@ header {
         width: 70%;
         height: 70%;
     }
+
+    .footer .top-footer {
+        gap: 0;
+    }
+
+    .footer-review,
+    .footer-newsletter {
+        width: 38%;
+    }
+
+    .footer-links {
+        width: 18%;
+    }
 }
 
 /* xl */
@@ -1378,6 +1548,16 @@ header {
 
     .community .container {
         padding-inline: 0;
+    }
+
+    footer .container {
+        padding-inline: 0;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 50px;
     }
 }
 
